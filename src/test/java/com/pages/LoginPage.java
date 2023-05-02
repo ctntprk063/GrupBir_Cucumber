@@ -22,6 +22,7 @@ public  class LoginPage extends BasePage {
         loginBtn.click();
         emailBox.sendKeys(ConfigurationReader.get("loginMail"));
         passwordBox.sendKeys(ConfigurationReader.get("loginPassword"));
+        // kod eklemeliyim
         loginSubmit.click();
     }
 
@@ -32,6 +33,9 @@ public  class LoginPage extends BasePage {
         emailBox.sendKeys(ConfigurationReader.get("loginMail"));
         passwordBox.sendKeys(ConfigurationReader.get("loginPassword"));
         loginSubmit.click();
+        //asssssssssss
+        //asdffffffgdfg
+        //sdgdfgdfgh
     }
 
 
