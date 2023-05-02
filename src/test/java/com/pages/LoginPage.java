@@ -26,9 +26,16 @@ public  class LoginPage extends BasePage {
     }
 
 
- //deneme
-    //deneme2
-    //deneme3
+
+    public void login1(){
+        loginBtn.click();
+        emailBox.sendKeys(ConfigurationReader.get("loginMail"));
+        passwordBox.sendKeys(ConfigurationReader.get("loginPassword"));
+        loginSubmit.click();
+    }
+
+
+
 
 
 
