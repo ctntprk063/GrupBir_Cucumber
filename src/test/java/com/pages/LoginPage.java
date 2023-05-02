@@ -28,6 +28,16 @@ public  class LoginPage extends BasePage {
 
 
 
+    public void login1(){
+        loginBtn.click();
+        emailBox.sendKeys(ConfigurationReader.get("loginMail"));
+        passwordBox.sendKeys(ConfigurationReader.get("loginPassword"));
+        loginSubmit.click();
+    }
+
+
+
+
 
 
 }
