@@ -1,7 +1,7 @@
 Feature: Demo Webshop log in Test
 
   @wip
-  Scenario:As a User can log in with valid credentials
+  Scenario: Log in as a User
     Given The user is on the login page
     When The user enters valid credentials
     Then The user should be able to login
