@@ -19,12 +19,12 @@ public class Hooks {
         Driver.closeDriver();
     }
 
-    @Before("@db")
-    public void setUpDB(){
-        System.out.println("t connection DB");
-    }
-    @After("@db")
-    public void tearDownDB(){
-        System.out.println("\tDisconnection DB");
-    }
+//    @Before("@db")
+//    public void setUpDB(){
+//        System.out.println("t connection DB");
+//    }
+//    @After("@db")
+//    public void tearDownDB(){
+//        System.out.println("\tDisconnection DB");
+//    }
 }
