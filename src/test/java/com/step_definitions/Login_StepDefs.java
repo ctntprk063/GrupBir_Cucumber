@@ -15,9 +15,11 @@ public class Login_StepDefs {
         Driver.get().get(ConfigurationReader.get("url"));
     }
     @When("The user enters valid credentials")
-    public void the_user_enters_valid_credentials() {
+    public void the_user_enters_valid_credentials()
+    {
      loginPage.login();
     }
+
     @Then("The user should be able to login")
     public void the_user_should_be_able_to_login() {
         Assert.assertTrue(loginPage.textControl.getText().contains("Welcome"));
