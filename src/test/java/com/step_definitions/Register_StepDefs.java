@@ -20,15 +20,10 @@ public class Register_StepDefs {
 
     @Then("The user should be able to register")
     public void the_user_should_be_able_to_register() {
-
         registerPage.isDisplayedMtd();
     }
-    @Then("First and Last Name should not accept numbers")
-    public void first_and_last_name_should_not_accept_numbers() {
-
-    }
-    @Then("The user should ne able to not  take a text contain\"Your registration completed\"")
-    public void the_user_should_ne_able_to_not_take_a_text_contain_your_registration_completed() {
-
+    @Then("First and Last Name should not accept numbers {string}")
+    public void first_and_last_name_should_not_accept_numbers(String message) {
+        Assert.assertTrue(registerPage.Message.getText().contains(message));
     }
 }

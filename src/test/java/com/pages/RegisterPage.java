@@ -26,7 +26,8 @@ public class RegisterPage extends BasePage {
     public WebElement ContinueBtn;
     @FindBy(xpath = "//a[text()='Log out']")
     public WebElement LogoutText;
-
+    @FindBy(xpath = "//div[@class='result']")
+    public WebElement Message;
 
     public void register(String firstname, String lastname, String email, String password, String confirmPassword) {
         GenderBtn.click();
@@ -36,7 +37,7 @@ public class RegisterPage extends BasePage {
         Password.sendKeys(password);
         ConfirmPassword.sendKeys(confirmPassword);
         RegisterCheck.click();
-        ContinueBtn.click();
+        //ContinueBtn.click();
     }
 
     public void isDisplayedMtd() {
