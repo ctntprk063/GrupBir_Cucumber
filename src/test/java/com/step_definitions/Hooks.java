@@ -16,15 +16,15 @@ public class Hooks {
     @After
     public void tearDown(){
         System.out.println("\tThis is coming from after method");
-        Driver.closeDriver();
+        //Driver.closeDriver();
     }
 
-    @Before("@db")
-    public void setUpDB(){
-        System.out.println("t connection DB");
-    }
-    @After("@db")
-    public void tearDownDB(){
-        System.out.println("\tDisconnection DB");
-    }
+//    @Before("@db")
+//    public void setUpDB(){
+//        System.out.println("t connection DB");
+//    }
+//    @After("@db")
+//    public void tearDownDB(){
+//        System.out.println("\tDisconnection DB");
+//    }
 }
