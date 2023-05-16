@@ -28,6 +28,16 @@ public class RegisterPage extends BasePage {
     public WebElement LogoutText;
     @FindBy(xpath = "//div[@class='result']")
     public WebElement Message;
+    @FindBy(xpath = "(//span[@class='field-validation-error'])[1]")
+    public WebElement FirstNameMessage;
+    @FindBy(xpath = "//span[text()='The password should have at least 6 characters.']")
+    public WebElement PasswordMessage;
+    @FindBy(xpath = "//span[text()='Wrong email']")
+    public WebElement WrongEmailMessage;
+    @FindBy(xpath = "//span[text()='Email is required.']")
+    public WebElement EmailEmptyMessage;
+
+
 
     public void register(String firstname, String lastname, String email, String password, String confirmPassword) {
         GenderBtn.click();
