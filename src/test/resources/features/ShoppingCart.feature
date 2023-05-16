@@ -24,4 +24,5 @@ Feature:  Shopping Cart Functionalitiy
     And The user navigates to the Shopping Cart.
     And The user enters "7" product
     Then The user click on the update cart
-
+    And The user enters "0" product
+    Then The user click on the update cart

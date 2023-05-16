@@ -16,7 +16,7 @@ public abstract class BasePage {
     @FindBy(partialLinkText = "Books")
     public WebElement booksIcon;
 
-    @FindBy(partialLinkText = "Computers")
+    @FindBy(xpath =  "//ul[@class='top-menu']/li[2]")
     public WebElement computerIcon;
 
     @FindBy(partialLinkText = "Electronics")
