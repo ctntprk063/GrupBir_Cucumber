@@ -25,7 +25,7 @@ public class ShoppingCart_StepDefs {
     @Then("The user click on  the Computers")
     public void theUserClickOnTheComputers() {
         BrowserUtils.waitFor(2);
-       scp.topMenu("Computers");
+       scp.computerIcon.click();
     }
 
     @And("The user clicks on Notebooks icon and adds the product")
